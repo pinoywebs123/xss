@@ -17,8 +17,7 @@ Route::get('/tae', function(){
     $users = User::all();
 
     foreach($users as $user) {
-        
-        echo json_decode($user).'<br><br>';
+        echo $user.'<br><br>';
     }
 });
 
